@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- インライン要素には幅と高さは適用されない -->
+    <!-- tailwind cssの 4 == 1rem なので w-4 で 1文字分の幅になる -->
+    <span class="border border-red-500 w-4">インライン要素</span>
+    <div class="border border-red-500 w-4">ブロック要素</div>
+
+    <!-- ブロック要素 -->
+    <!-- 幅 固定 -->
+    <div class="border border-red-500 w-96">ブロック要素</div>
+    <!-- 幅 可変 -->
+    <div class="border border-red-500 w-full">ブロック要素</div>
+    <div class="mt-16 border border-blue-500 w-1/2">ブロック要素</div>
+    <!-- 幅 max指定 -->
+    <div class="border border-blue-500 max-w-2xl">ブロック要素</div>
+
+    <!-- flexbox -->
+    <div class="flex justify-around">
+      <div class="w-1/4 border border-pink-500">1つ目</div>
+      <div class="w-1/4 border border-pink-500">2つ目</div>
+      <div class="w-1/4 border border-pink-500">3つ目</div>
+      <div class="w-1/4 border border-pink-500">4つ目</div>
+    </div>
+  </body>
+</html>
