@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- SP->タブレット->PC -->
+
+    <!-- 横2->横2 -->
+    <div class="flex justify-center mb-16">
+      <!-- flex-grow で横いっぱいに要素が広がる -->
+      <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+      <div class="text-center border border-red-300 py-4 flex-grow">いいい</div>
+    </div>
+
+    <!-- 縦2->横2 -->
+    <!-- md:flex なのでタブレットサイズ以上で横レイアウト、それ以外は flex-growで幅いっぱいに要素が広がった縦に1つずつのレイアウトになる -->
+    <div class="md:flex justify-center mb-16">
+      <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+      <div class="text-center border border-red-300 py-4 flex-grow">いいい</div>
+    </div>
+
+    <!-- 縦2->横2(幅 5/12,7/12) -->
+    <div class="md:flex justify-center mb-16">
+      <div class="text-center border border-red-300 py-4 flex-grow md:w-5/12">あああ</div>
+      <div class="text-center border border-red-300 py-4 flex-grow md:w-7/12">いいい</div>
+    </div>
+
+    <!-- 縦2->横2(逆順) -->
+    <div class="md:flex flex-row-reverse justify-center mb-16">
+      <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+      <div class="text-center border border-blue-300 py-4 flex-grow">いいい</div>
+    </div>
+
+    <!-- 横3->横3 -->
+    <div class="flex justify-center mb-16">
+      <div class="text-center flex-grow border border-red-400 py-4">あああ</div>
+      <div class="text-center flex-grow border border-red-400 py-4">いいい</div>
+      <div class="text-center flex-grow border border-red-400 py-4">ううう</div>
+    </div>
+
+    <!-- 縦3->横3 -->
+    <div class="md:flex justify-center mb-16">
+      <div class="text-center flex-grow border border-red-400 py-4">あああ</div>
+      <div class="text-center flex-grow border border-red-400 py-4">いいい</div>
+      <div class="text-center flex-grow border border-red-400 py-4">ううう</div>
+    </div>
+
+    <!-- 縦3->横3(幅 3/12 6/12 3/12) -->
+    <div class="md:flex justify-center mb-16">
+      <div class="md:w-3/12 text-center flex-grow border border-pink-400 py-4">あああ</div>
+      <div class="md:w-6/12 text-center flex-grow border border-pink-400 py-4">いいい</div>
+      <div class="md:w-3/12 text-center flex-grow border border-pink-400 py-4">ううう</div>
+    </div>
+
+    <!-- 縦横2->横4 -->
+    <!-- flex-wrap を使うとはみ出した要素を改行してくれる -->
+    <div class="flex justify-center flex-wrap mb-16">
+      <div class="md:w-1/4 w-1/2 text-center flex-grow border border-purple-400 py-4">左上</div>
+      <div class="md:w-1/4 w-1/2 text-center flex-grow border border-purple-400 py-4">右上</div>
+      <div class="md:w-1/4 w-1/2 text-center flex-grow border border-purple-400 py-4">左下</div>
+      <div class="md:w-1/4 w-1/2 text-center flex-grow border border-purple-400 py-4">右下</div>
+    </div>
+  </body>
+</html>
