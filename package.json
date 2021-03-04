@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Shigeyuki-fukuda/tailwindcss_playground/issues"
   },
-  "homepage": "https://github.com/Shigeyuki-fukuda/tailwindcss_playground#readme"
+  "homepage": "https://github.com/Shigeyuki-fukuda/tailwindcss_playground#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.7",
+    "tailwindcss": "^2.0.3"
+  }
 }
