@@ -1,0 +1,19 @@
+{
+  "name": "tailwindcss_playground",
+  "version": "1.0.0",
+  "description": "tailwindcss v2.0.1 メモ 正確なコードは公式サイトを参照。 https://tailwindcss.com/docs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shigeyuki-fukuda/tailwindcss_playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shigeyuki-fukuda/tailwindcss_playground/issues"
+  },
+  "homepage": "https://github.com/Shigeyuki-fukuda/tailwindcss_playground#readme"
+}
