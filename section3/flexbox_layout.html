@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- SP->タブレット->PC -->
+
+    <!-- 横2->横2 -->
+    <div class="flex justify-center mb-16">
+      <!-- flex-grow で横いっぱいに要素が広がる -->
+      <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+      <div class="text-center border border-red-300 py-4 flex-grow">いいい</div>
+    </div>
+
+    <!-- 縦2->横2 -->
+    <!-- md:flex なのでタブレットサイズ以上で横レイアウト、それ以外は flex-growで幅いっぱいに要素が広がった縦に1つずつのレイアウトになる -->
+    <div class="md:flex justify-center mb-16">
+      <div class="text-center border border-red-300 py-4 flex-grow">あああ</div>
+      <div class="text-center border border-red-300 py-4 flex-grow">いいい</div>
+    </div>
+  </body>
+</html>
