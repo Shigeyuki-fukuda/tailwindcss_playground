@@ -4,7 +4,9 @@
   "description": "tailwindcss v2.0.1 メモ 正確なコードは公式サイトを参照。 https://tailwindcss.com/docs",
   "main": "index.js",
   "scripts": {
-    "build-css": "npx tailwindcss build src/styles.css -o public/styles.css"
+    "build-css": "npx tailwindcss build src/styles.css -o public/styles.css",
+    "dev": "npx tailwindcss build src/styles.css -o src/styles_dev.css",
+    "prod-build": "cross-env NODE_ENV=production npx tailwindcss build src/styles.css -o public/styles.css"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.7",
     "tailwindcss": "^2.0.3"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
   }
 }
