@@ -28,6 +28,9 @@ module.exports = {
           500: '#AFE8FF',
           600: '#ACFFD4',
         }
+      },
+      'fontFamily': {
+        noto: ['Noto Sans JP']
       }
     },
   },
