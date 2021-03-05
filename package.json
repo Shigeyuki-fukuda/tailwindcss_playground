@@ -4,7 +4,7 @@
   "description": "tailwindcss v2.0.1 メモ 正確なコードは公式サイトを参照。 https://tailwindcss.com/docs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-css": "npx tailwindcss build src/styles.css -o public/styles.css"
   },
   "repository": {
     "type": "git",
